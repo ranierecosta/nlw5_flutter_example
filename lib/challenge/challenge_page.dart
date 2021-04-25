@@ -1,4 +1,5 @@
 import 'package:devquiz/challenge/widgets/question_indicator/question_indicator_widget.dart';
+import 'package:devquiz/challenge/widgets/quiz/quiz_widget.dart';
 import 'package:flutter/material.dart';
 
 class ChallengePage extends StatefulWidget {
@@ -17,6 +18,9 @@ class _ChallengePageState extends State<ChallengePage> {
         child: SafeArea(
           child: QuestionIndicatorWidget(),
         ),
+      ),
+      body: QuizWidget(
+        title: "O que o flutter faz em sua totalidade?",
       ),
     );
   }
